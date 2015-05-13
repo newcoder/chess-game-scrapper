@@ -5,9 +5,9 @@
 var request = require('request'),
   cheerio = require('cheerio'),
   mongodb = require('mongodb'),
-  jsdom = require('jsdom'),
-  fs     = require('fs'),
-  jquerystring = fs.readFileSync("./jquery-1.6.min.js").toString();
+//  jsdom = require('jsdom'),
+  fs     = require('fs')
+//  jquerystring = fs.readFileSync("./jquery-1.6.min.js").toString();
  
   
 var proxy = 'http://3.87.248.6:88';
@@ -17,7 +17,6 @@ var getEndGame = function getEndGame(url, callback) {
   var reqOptions = {uri: url};
   if (proxy !== '') reqOptions['proxy'] = proxy;
 
-  var self = this;
   request(reqOptions, function(err, response, body){
     //Just a basic error check
     if(err && response.statusCode !== 200){ 

@@ -18,7 +18,6 @@ var getDPBook = function getDPBook(url, num, callback) {
   var reqOptions = {uri: url};
   if (proxy !== '') reqOptions['proxy'] = proxy;
 
-  var self = this;
   request(reqOptions, function(err, response, body){
     //Just a basic error check
     if(err && response.statusCode !== 200){ 
@@ -44,7 +43,6 @@ var getDPBook_jsdom = function getDPBook(url, num, callback) {
   var reqOptions = {uri: url, encoding: 'binary'};
   if (proxy !== '') reqOptions['proxy'] = proxy;
 
-  var self = this;
   request(reqOptions, function(err, response, body){
     //Just a basic error check
     if(err && response.statusCode !== 200){ 
@@ -87,7 +85,6 @@ var getSTBook = function getSTBook(url, callback) {
   var reqOptions = {uri: url, encoding: 'binary'};
   if (proxy !== '') reqOptions['proxy'] = proxy;
 
-  var self = this;
   request(reqOptions, function(err, response, body){
     //Just a basic error check
     if(err && response.statusCode !== 200){ 

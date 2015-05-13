@@ -1,0 +1,30 @@
+{
+  "name": "chess-scrapper",
+  "version": "1.0.0",
+  "description": "scrape chess games",
+  "main": "getendgame.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/newcoder/chess-game-scrapper.git"
+  },
+  "keywords": [
+    "chinese",
+    "chess"
+  ],
+  "author": "ray ni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/newcoder/chess-game-scrapper/issues"
+  },
+  "homepage": "https://github.com/newcoder/chess-game-scrapper",
+  "dependencies": {
+    "cheerio": "^0.19.0",
+    "iconv-lite": "^0.4.8",
+    "jsdom": "^5.4.1",
+    "mongodb": "^2.0.31",
+    "request": "^2.55.0"
+  }
+}
